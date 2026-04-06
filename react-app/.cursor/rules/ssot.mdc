@@ -1,0 +1,32 @@
+---
+description: このリポジトリはアプリケーションではなく SSOT 完成物プロファイルを管理する
+globs: "**/*"
+alwaysApply: true
+---
+
+# Cursor ルール — SSOT 完成物プロファイル
+
+## このリポジトリについて
+
+このディレクトリ（`react-app/`）は **アプリケーションではありません**。
+
+**SSOT 完成物プロファイル** として、target repo にそのままコピーして展開するための
+AI エージェント向けルールと入口ファイルの完成物セットです。
+
+## 参照すべきファイル
+
+以下の順で参照してください。
+
+1. `.github/copilot-instructions.md` — Copilot 共通入口（全エージェント共通の規範ルール）
+2. `.github/copilot/00-index.md` — 文書索引（参照順）
+3. `.github/copilot/10-requirements.md` — 管理対象・非対象・受入条件
+4. `.github/copilot/20-architecture.md` — ディレクトリ構造・distribution_root・展開イメージ
+
+## 禁止事項
+
+- アプリケーションコードを生成しない
+- `.github/workflows/**` を生成しない
+- `package.json` 等を生成しない
+- `skills/`、`mcp/`、`schema/`、`policies/` 配下の内容を生成しない
+- 推測によるファイル追加を行わない
+- SSOT に定義されていない新ルールを創作しない
